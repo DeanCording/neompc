@@ -87,7 +87,7 @@
 	$smarty->assign('browselist_add_link', 'index.php?action=fileadd&file=');
 	$smarty->assign('playlist_remove_link', 'index.php?action=remove&id=');
 	$smarty->assign('control_link', 'index.php?page=control');
-	$smarty->assign('playlist_play_link', 'index.php?page=control&action=play&skipto=');
+	$smarty->assign('playlist_play_link', 'index.php?page=control&action=skipto&id=');
 	$smarty->assign('playlist_clear_link', 'index.php?action=clear');
 	$smarty->assign('playlist_shuffle_link', 'index.php?action=shuffle');
 	$smarty->assign('mpd_state', $mympd->state);
