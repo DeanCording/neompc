@@ -1,11 +1,10 @@
 <?php
 	/* handle the actions for mpd */
 
-	if ($_GET['skipto']) {
-		$mympd->SkipTo($_GET['skipto']);
-	}
-
 	switch($_GET['action']) {
+		case "skipto":
+			$mympd->SkipTo($_GET['id']);
+			break;
 		case "shuffle":
 			$mympd->PLShuffle();
 			break;
