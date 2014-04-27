@@ -334,6 +334,33 @@ img.button {
 	margin-left: 3px;
 	border: 0px none !important;
 }
+
+#random {
+        position: absolute;
+        left: 280px;
+}
+#random a {
+        display: block;
+        width: 30px;
+        height: 20px;
+        margin-top: 30px;
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+}
+
+#random #random_button {
+        background-image: url(templates/{:$template:}/images/shuffle_button.png);
+}
+#random #random_button:hover {
+        background-position: 0px -20px;
+}
+#random #random_button.selected {
+        background-position: -30px 0px;
+}
+#random #random_button.selected:hover {
+        background-position: -30px -20px;
+}
+
 #progress {
 	background: #222 url(templates/{:$template:}/images/progress_back.png) center center repeat-x;
 	border: 1px solid #666;
