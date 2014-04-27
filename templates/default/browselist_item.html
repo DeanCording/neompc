@@ -1,4 +1,3 @@
-
 			{:if $browselist_item.directory:}
 
 				<li class="dir">
@@ -24,9 +23,9 @@
 					<a class="add"><img src="templates/{:$template:}/images/add_disabled.png" alt="Add" class="button" /></a>
 				{:else:}
 				<li class="track">
-					<a class="add" href="{:$browselist_add_link:}{:$browselist_item.file|escape:'url':}"><img src="templates/{:$template:}/images/add.png" alt="Add" class="button" /></a>
+					<a class="add" href="{:$browselist_add_link:}{:$browselist_item.file|escape:'url':}" title="Append song to current playlist"><img src="templates/{:$template:}/images/add.png" alt="Add" class="button" /></a>
 				{:/if:}
-					<a class="play" href="{:$browselist_play_link:}{:$browselist_item.file|escape:'url':}"><img src="templates/{:$template:}/images/play.png" alt="Play" class="button" /></a>
+					<a class="play" href="{:$browselist_play_link:}{:$browselist_item.file|escape:'url':}" title="Clear playlist and play song"><img src="templates/{:$template:}/images/play.png" alt="Play" class="button" /></a>
 					<a class="browse">
 				{:if $browselist_item.Title|escape:'html':}
 					<span class="title">{:$browselist_item.Title|escape:'html':}</span>
