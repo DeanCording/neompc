@@ -1,4 +1,3 @@
-
 			<!--<ul id="crumb_trail">
 				<li><a href="{:$home_link:}"><img src="templates/{:$template:}/images/home.gif" alt="Home" /></a></li>
 
@@ -9,8 +8,8 @@
 			</ul>-->
 			
 			<div id="list_header">
-				<div id="buttons"><a href="index.php?action=playall"><img src="templates/{:$template:}/images/playall.png" /></a> <a href="index.php?action=addall"><img src="templates/{:$template:}/images/addall.png" /></a></div>
-				{:if $browse_parent_link:}<a href="index.php?browse={:$browse_parent_link:}" id="browse_back">&nbsp;</a>{:/if:}
+				<div id="buttons"><a href="index.php?action=playall" title="Replace current playlist with all songs in this folder and all subfolders"><img src="templates/{:$template:}/images/playall.png" /></a> <a href="index.php?action=addall" title="Append all songs in this folder and all subfolders to the current playlist"><img src="templates/{:$template:}/images/addall.png" /></a></div>
+				{:if $browse_parent_link:}<a href="index.php?browse={:$browse_parent_link:}" id="browse_back" title="Back">&nbsp;</a>{:/if:}
 				<p>{:$browse_header|escape:'html':}</p>
 			</div>
 
