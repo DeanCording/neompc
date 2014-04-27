@@ -1,9 +1,9 @@
 			<div id="list_header">
 				<div id="buttons">
-					<a id="removeall" href="{:$playlist_clear_link:}"><img src="templates/{:$template:}/images/delall.png" /></a>
+					<a id="removeall" href="{:$playlist_clear_link:}"><img src="templates/{:$template:}/images/delall.png" title="Clear the playlist"></a>
 				</div>
 				<div id="buttons_left">
-					<a id="shuffle" href="{:$playlist_shuffle_link:}"><img src="templates/{:$template:}/images/shuffle.png" /></a>
+					<a id="shuffle" href="{:$playlist_shuffle_link:}"><img src="templates/{:$template:}/images/shuffle.png" title="Shuffle the current playlist"></a>
 				</div>
 			</div>
 
@@ -15,7 +15,8 @@
 						{:include file="default/playlist_item.html":}
 					{:/foreach:}
 				</ul>
-			</div>			{:else:}
+			</div>
+			{:else:}
 			<p>(Empty playlist)</p>
 			{:/if:}
 
