@@ -33,6 +33,11 @@
 			$repeat = ($mympd->repeat == 0 ? 1 : 0);
 			$mympd->SetRepeat($repeat);
 			break;
+                case 'random':
+                        // toggle repeat
+                        $random = ($mympd->random == 0 ? 1 : 0);
+                        $mympd->SetRandom($random);
+                        break;
 		case 'volume':
 			$volume = $_GET['value'];
 			$mympd->SetVolume($volume);
